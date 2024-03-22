@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.config.gnu.exe.debug.349343623">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.debug.349343623" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.exe.debug.349343623" name="Debug" optionalBuildProperties="org.eclipse.cdt.docker.launcher.containerbuild.property.selectedvolumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.volumes=" parent="cdt.managedbuild.config.gnu.exe.debug">
+					<folderInfo id="cdt.managedbuild.config.gnu.exe.debug.349343623." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.exe.debug.1498422129" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.exe.debug">
+							<targetPlatform id="cdt.managedbuild.target.gnu.platform.exe.debug.1335134143" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.debug"/>
+							<builder buildPath="${workspace_loc:/blackstar_ecm}/Debug" id="cdt.managedbuild.target.gnu.builder.exe.debug.1716251430" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.exe.debug"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1893320349" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1681271759" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug">
+								<option id="gnu.cpp.compiler.exe.debug.option.optimization.level.1051791499" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option defaultValue="gnu.cpp.compiler.debugging.level.max" id="gnu.cpp.compiler.exe.debug.option.debugging.level.1965538270" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1411034852" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="../inc"/>
+									<listOptionValue builtIn="false" value="../submodules/mercury/embedded"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.dialect.std.1739468487" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++17" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1668764355" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1088477876" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.exe.debug.option.optimization.level.82291557" name="Optimization Level" superClass="gnu.c.compiler.exe.debug.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option defaultValue="gnu.c.debugging.level.max" id="gnu.c.compiler.exe.debug.option.debugging.level.775422430" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.72513549" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.2135478144" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1350068850" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.paths.1182661037" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
+									<listOptionValue builtIn="false" value="../lib"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.libs.1330015465" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+									<listOptionValue builtIn="false" value="pthread"/>
+									<listOptionValue builtIn="false" value="VL_OSALib"/>
+									<listOptionValue builtIn="false" value="cgos"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1993646812" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.exe.debug.1065656935" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.35258124" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="submodules/mercury/embedded/system/systemlib/src/xchange.cpp|submodules/mercury/embedded/system/systemlib/src/watchdogtask.cpp|submodules/mercury/embedded/system/systemlib/src/synthfrequencies.cpp|submodules/mercury/embedded/system/systemlib/src/serialnumberextparams.cpp|submodules/mercury/embedded/system/systemlib/src/serialnumber.cpp|submodules/mercury/embedded/system/systemlib/src/serialmissionfile.cpp|submodules/mercury/embedded/system/systemlib/src/returnloss.cpp|submodules/mercury/embedded/system/systemlib/src/rcustates.cpp|submodules/mercury/embedded/system/systemlib/src/missionexpirywarningstatus.cpp|submodules/mercury/embedded/system/systemlib/src/mcmstates.cpp|submodules/mercury/embedded/system/systemlib/src/mcmcommands.cpp|submodules/mercury/embedded/system/systemlib/src/logginglevel.cpp|submodules/mercury/embedded/system/systemlib/src/loggers.cpp|submodules/mercury/embedded/system/systemlib/src/jammingengine.cpp|submodules/mercury/embedded/system/systemlib/src/gps.cpp|submodules/mercury/embedded/system/systemlib/src/fgdstates.cpp|submodules/mercury/embedded/system/systemlib/src/etim.cpp|submodules/mercury/embedded/system/systemlib/src/encryption.cpp|submodules/mercury/embedded/system/systemlib/src/ecmcommands.cpp|submodules/mercury/embedded/system/systemlib/src/ecmband.cpp|submodules/mercury/embedded/system/systemlib/src/drmversion.cpp|submodules/mercury/embedded/system/systemlib/src/detailedbitmcm.cpp|submodules/mercury/embedded/system/systemlib/src/detailedbitecm.cpp|submodules/mercury/embedded/system/systemlib/src/detailedbitdrm.cpp|submodules/mercury/embedded/system/systemlib/src/ctsstates.cpp|submodules/mercury/embedded/system/systemlib/src/covertmode.cpp|submodules/mercury/embedded/system/systemlib/src/controller.cpp|submodules/mercury/embedded/system/systemlib/src/commands.cpp|submodules/mercury/embedded/system/systemlib/src/chunkmcm.cpp|submodules/mercury/embedded/system/systemlib/src/chunkecm.cpp|submodules/mercury/embedded/system/systemlib/src/bootversion.cpp|submodules/mercury/embedded/system/systemlib/src/bootconfig.cpp|submodules/mercury/embedded/system/systemlib/src/benchtest.cpp|submodules/mercury/embedded/system/systemlib/src/batterywarningstatus.cpp|submodules/mercury/embedded/system/systemlib/src/battery.cpp|submodules/mercury/embedded/system/systemlib/src/atecontrol.cpp|submodules/mercury/embedded/system/test|submodules/mercury/embedded/test|submodules/mercury/embedded/sio|submodules/mercury/embedded/rtos|submodules/mercury/embedded/rcu|submodules/mercury/embedded/product|submodules/mercury/embedded/mcm|submodules/mercury/embedded/has|submodules/mercury/embedded/flash|submodules/mercury/embedded/fgd|submodules/mercury/embedded/fatfilesystem|submodules/mercury/embedded/ecm|submodules/mercury/embedded/device|submodules/mercury/embedded/dependencies|submodules/mercury/embedded/control|submodules/mercury/embedded/confidence|submodules/mercury/embedded/comms|submodules/mercury/embedded/common|submodules/mercury/embedded/cli|submodules/mercury/embedded/build|submodules/mercury/embedded/bsp|submodules/mercury/embedded/bootloader|submodules/mercury/embedded/boost|submodules/mercury/embedded/board|submodules/mercury/embedded/base|submodules/mercury/embedded/aes|submodules/mercury/UI|submodules/mercury/drm|submodules/mercury/commandapi|submodules/mercury/beautifier" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.gnu.exe.release.1907893781">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.release.1907893781" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.exe.release.1907893781" name="Release" optionalBuildProperties="" parent="cdt.managedbuild.config.gnu.exe.release">
+					<folderInfo id="cdt.managedbuild.config.gnu.exe.release.1907893781." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.exe.release.177436285" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.exe.release">
+							<targetPlatform id="cdt.managedbuild.target.gnu.platform.exe.release.489154739" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.release"/>
+							<builder buildPath="${workspace_loc:/blackstar_ecm}/Release" id="cdt.managedbuild.target.gnu.builder.exe.release.814695366" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.exe.release"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.796696396" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.80664105" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release">
+								<option id="gnu.cpp.compiler.exe.release.option.optimization.level.1204355942" name="Optimization Level" superClass="gnu.cpp.compiler.exe.release.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option defaultValue="gnu.cpp.compiler.debugging.level.none" id="gnu.cpp.compiler.exe.release.option.debugging.level.1434563454" name="Debug Level" superClass="gnu.cpp.compiler.exe.release.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.2137246688" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="../inc"/>
+									<listOptionValue builtIn="false" value="../submodules/mercury/embedded"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.dialect.std.1853307576" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++17" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.929958533" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.601268630" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release">
+								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.exe.release.option.optimization.level.949807808" name="Optimization Level" superClass="gnu.c.compiler.exe.release.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option defaultValue="gnu.c.debugging.level.none" id="gnu.c.compiler.exe.release.option.debugging.level.1236441905" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.408529261" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.release.660819730" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.release"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.release.309918667" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.release">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.libs.1418152405" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+									<listOptionValue builtIn="false" value="pthread"/>
+									<listOptionValue builtIn="false" value="VL_OSALib"/>
+									<listOptionValue builtIn="false" value="cgos"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.paths.71241163" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="../lib"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1507612606" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.exe.release.1599155049" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.release">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1237506358" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="submodules/mercury/embedded/system/systemlib/src/xchange.cpp|submodules/mercury/embedded/system/systemlib/src/watchdogtask.cpp|submodules/mercury/embedded/system/systemlib/src/synthfrequencies.cpp|submodules/mercury/embedded/system/systemlib/src/serialnumberextparams.cpp|submodules/mercury/embedded/system/systemlib/src/serialnumber.cpp|submodules/mercury/embedded/system/systemlib/src/serialmissionfile.cpp|submodules/mercury/embedded/system/systemlib/src/returnloss.cpp|submodules/mercury/embedded/system/systemlib/src/rcustates.cpp|submodules/mercury/embedded/system/systemlib/src/missionexpirywarningstatus.cpp|submodules/mercury/embedded/system/systemlib/src/mcmstates.cpp|submodules/mercury/embedded/system/systemlib/src/mcmcommands.cpp|submodules/mercury/embedded/system/systemlib/src/logginglevel.cpp|submodules/mercury/embedded/system/systemlib/src/loggers.cpp|submodules/mercury/embedded/system/systemlib/src/jammingengine.cpp|submodules/mercury/embedded/system/systemlib/src/gps.cpp|submodules/mercury/embedded/system/systemlib/src/fgdstates.cpp|submodules/mercury/embedded/system/systemlib/src/etim.cpp|submodules/mercury/embedded/system/systemlib/src/encryption.cpp|submodules/mercury/embedded/system/systemlib/src/ecmcommands.cpp|submodules/mercury/embedded/system/systemlib/src/ecmband.cpp|submodules/mercury/embedded/system/systemlib/src/drmversion.cpp|submodules/mercury/embedded/system/systemlib/src/detailedbitmcm.cpp|submodules/mercury/embedded/system/systemlib/src/detailedbitecm.cpp|submodules/mercury/embedded/system/systemlib/src/detailedbitdrm.cpp|submodules/mercury/embedded/system/systemlib/src/ctsstates.cpp|submodules/mercury/embedded/system/systemlib/src/covertmode.cpp|submodules/mercury/embedded/system/systemlib/src/controller.cpp|submodules/mercury/embedded/system/systemlib/src/commands.cpp|submodules/mercury/embedded/system/systemlib/src/chunkmcm.cpp|submodules/mercury/embedded/system/systemlib/src/chunkecm.cpp|submodules/mercury/embedded/system/systemlib/src/bootversion.cpp|submodules/mercury/embedded/system/systemlib/src/bootconfig.cpp|submodules/mercury/embedded/system/systemlib/src/benchtest.cpp|submodules/mercury/embedded/system/systemlib/src/batterywarningstatus.cpp|submodules/mercury/embedded/system/systemlib/src/battery.cpp|submodules/mercury/embedded/system/systemlib/src/atecontrol.cpp|submodules/mercury/embedded/system/test|submodules/mercury/embedded/test|submodules/mercury/embedded/sio|submodules/mercury/embedded/rtos|submodules/mercury/embedded/rcu|submodules/mercury/embedded/product|submodules/mercury/embedded/mcm|submodules/mercury/embedded/has|submodules/mercury/embedded/flash|submodules/mercury/embedded/fgd|submodules/mercury/embedded/fatfilesystem|submodules/mercury/embedded/ecm|submodules/mercury/embedded/device|submodules/mercury/embedded/dependencies|submodules/mercury/embedded/control|submodules/mercury/embedded/confidence|submodules/mercury/embedded/comms|submodules/mercury/embedded/common|submodules/mercury/embedded/cli|submodules/mercury/embedded/build|submodules/mercury/embedded/bsp|submodules/mercury/embedded/bootloader|submodules/mercury/embedded/boost|submodules/mercury/embedded/board|submodules/mercury/embedded/base|submodules/mercury/embedded/aes|submodules/mercury/UI|submodules/mercury/drm|submodules/mercury/commandapi|submodules/mercury/beautifier" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="blackstar_ecm.cdt.managedbuild.target.gnu.exe.716145520" name="Executable" projectType="cdt.managedbuild.target.gnu.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.349343623;cdt.managedbuild.config.gnu.exe.debug.349343623.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1088477876;cdt.managedbuild.tool.gnu.c.compiler.input.72513549">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.1907893781;cdt.managedbuild.config.gnu.exe.release.1907893781.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.80664105;cdt.managedbuild.tool.gnu.cpp.compiler.input.929958533">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.1907893781;cdt.managedbuild.config.gnu.exe.release.1907893781.;cdt.managedbuild.tool.gnu.c.compiler.exe.release.601268630;cdt.managedbuild.tool.gnu.c.compiler.input.408529261">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.349343623;cdt.managedbuild.config.gnu.exe.debug.349343623.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1681271759;cdt.managedbuild.tool.gnu.cpp.compiler.input.1668764355">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+</cproject>

@@ -1,0 +1,3 @@
+[submodule "submodules/mercury"]
+	path = submodules/mercury
+	url = ssh://git@bitbucket.kirintec.local:7999/ms/mercury.git

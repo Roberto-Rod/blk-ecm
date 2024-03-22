@@ -1,0 +1,59 @@
+#!/bin/bash
+
+echo "Checking for tabs in Python and IDL files"
+
+# Find the files in the commit that match .idl or .py; we don't need to check
+# for tabs in the C++ files as the clang-format check later covers that
+TCFILES=`git diff --cached --name-only --diff-filter=d | egrep '(\.(idl|py)$)'`
+
+# Split the list of files returned, separated by '\n', into an array
+# so we can work out the number of matching files properly
+IFSTC='\n' read -r -a TCFILEARRAY <<< "$TCFILES"
+
+# If at least one file matches, check for tabs in them all.
+if [[ ${#TCFILEARRAY[@]} > 0 ]]; then
+    for CHECK_FILE in $TCFILES
+    do
+        if
+            echo $CHECK_FILE | xargs git diff --cached | egrep $'^\+[[:space:]]*\t+' > /dev/null
+        then
+            echo "Tabs found in your commit. Please use (four) spaces and re-commit."
+            echo "Check - " $CHECK_FILE
+            exit 1
+        fi
+    done
+fi
+
+# Now check for virtual and (override or final) in any changed c++ files
+# We check all the changed files, even though only hpp really matters
+
+echo "Checking for functions declared with virtual and (override or final)"
+
+# Find the files in the commit that match .hpp or .cpp
+VOFILES=`git diff --cached --name-only --diff-filter=d | egrep '(\.((h|c)pp)$)'`
+IFSVO='\n' read -r -a VOFILEARRAY <<< "$VOFILES"
+
+if [[ ${#VOFILEARRAY[@]} > 0 ]]; then
+    for CHECK_FILE in $VOFILES
+    do
+        if
+            echo $CHECK_FILE | xargs sed -z "s/\n/ /g;s/; /;\n/g" | grep -E "virtual.*(override|final).*;" > /dev/null
+        then
+            echo "At least one changed file includes at least one function"
+            echo "declared as both virtual and (override or final)"
+            echo "Please remove \"virtual\" from these lines and re-commit."
+            echo "Check - " $CHECK_FILE
+            exit 1
+        fi
+    done
+fi
+
+echo "Checking the formatting of the changed lines"
+CLANGFORMATOUT=$(git clang-format --diff --staged -q)
+# Redirect output to stderr.
+exec 1>&2
+if [[ "${CLANGFORMATOUT}" != "" ]]; then
+    echo "Some files do not follow the coding standards."
+    echo "Please run 'git clang-format' to find, and fix, them."
+    exit 1
+fi

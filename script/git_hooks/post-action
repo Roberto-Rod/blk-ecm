@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Generate Build ID Header File"
+cd script
+unset GIT_DIR
+./build_id.sh
